@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/tictac.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div id="explanation">
+        <h1 class="center">2 Player Tic Tac Toe Game</h1>
+        <p class="center">A 2 player tic tac toe game. Have fun!</p>
+        <div id="buttons">
+            <span><em>Player 1: </em> X</span>
+            <label class="switch">
+                <input type="checkbox" id="designation">
+                <div class="slider round"></div>
+            </label>
+            <span>O</span>
+            <br />
+            <button class="reset">Reset</button>
+        </div>
+    </div>
+    <div id="gameboard">
+        <div class="row">
+            <div class="square bottom right sq1"></div>
+            <div class="square bottom right sq2"></div>
+            <div class="square bottom sq3"></div>
+        </div>
+        <div class="row">
+            <div class="square bottom right sq4"></div>
+            <div class="square bottom right sq5"></div>
+            <div class="square bottom sq6"></div>
+        </div>
+        <div class="row">
+            <div class="square right sq7"></div>
+            <div class="square right sq8"></div>
+            <div class="square sq9"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="./js/tictac.js"></script>
+</body>
+
+</html>
