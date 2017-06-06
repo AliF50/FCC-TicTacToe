@@ -40,13 +40,13 @@ $(document).ready(function() {
             }
             if (count === 9 && (!checkIfPlayerWon(o) || !checkIfPlayerWon(x))) {
                 alert('Tied!');
-                location.reload();
+                clearBoard();
             }
         }
     });
 
     $('.reset').on('click', function(event) { //handles reset button click
-        location.reload();
+        clearBoard();
     });
 
     $('#designation').on('click', function(event) {
@@ -78,6 +78,7 @@ $(document).ready(function() {
     }
 
     function clearBoard() {
+        count = 0;
         for (var i = 1; i <= 9; i++) {
             if ($('.sq' + i).hasClass(x) || $('.sq' + i).hasClass(o)) {
                 $('.sq' + i).removeClass(x);
